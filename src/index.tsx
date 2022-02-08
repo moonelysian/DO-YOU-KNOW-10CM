@@ -4,12 +4,14 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './page/Home';
+import Intro from './page/Intro';
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-      <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/intro" element={<Intro />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>,
